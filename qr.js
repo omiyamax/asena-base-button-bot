@@ -22,7 +22,7 @@ ${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please Wait.')}`);
         );
 
         if (!fs.existsSync('config.env')) {
-            fs.writeFileSync('config.env', `BOTSANUWA_SESSION="${st}"`);
+            fs.writeFileSync('config.env', `ALPHA_SESSION="${st}"`);
         }
         console.log(conn.user.jid.startsWith('90') || conn.user.jid.startsWith('94') ? 'meka katawath denna epa ' + conn.user.name : 'Dont Share This Code to Anyone ' + conn.user.name)
         process.exit(0);
