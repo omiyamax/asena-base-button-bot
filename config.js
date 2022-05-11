@@ -19,7 +19,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: '🌀AQUA 1.0 beta',
     CHANNEL: 'https://t.me/',
-    SESSION: process.env.AQUA_SESSION === undefined ? '' : process.env.AQUA_SESSION,
+    SESSION: process.env.ALPHA_SESSION === undefined ? '' : process.env.ALPHA_SESSION,
     FOOTER: process.env.FOOTER === undefined ? '𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝚀𝚄𝙰𝙱𝙾𝚃 ²⁰²²' : process.env.FOOTER,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     ANTIGROUP: process.env.ANTIGRP_LINK === undefined ? 'false' : process.env.ANTIGRP_LINK,
