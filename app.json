@@ -8,7 +8,7 @@
     "success_url": "https://sanuw-api.herokuapp.com/",
     "stack": "container",
     "env": {
-        "AQUA_SESSION": {
+        "ALPHA_SESSION": {
             "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්.",
             "required": true
         },
