@@ -4,7 +4,7 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./Janaka');
+const {Message, StringSession, Image, Video} = require('./Rawana');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
@@ -135,23 +135,23 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
         if (config.WORKTYPE == 'private') { 
          if (config.LANG == 'EN') { 
            
-             var privateen = '*CG Bot Working as Private!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as private.*\n*To change it, use* \n.setvar WORK_TYPE:public\n\n\n```Thanks For Using AQUABOT 🐳```'
+             var privateen = '*King Rawana Working as Private!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as private.*\n*To change it, use* \n.setvar WORK_TYPE:public\n\n\n```Thanks For Using AQUABOT 🐳```'
              await cobrabotconn.sendMessage(cobrabotconn.user.jid, Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.jpg, caption: privateen});
              
          } else if (config.LANG == 'SI') {
              
-             var privatesi = '*CG Bot ප්‍රයිවට් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot private ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:public\n*යන විධානය භාවිත කරන්න.*\n\n\n```AQUABOT භාවිත කරනවාට ස්තූතියි🐳```'
+             var privatesi = '*King Rawana ප්‍රයිවට් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot private ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:public\n*යන විධානය භාවිත කරන්න.*\n\n\n```AQUABOT භාවිත කරනවාට ස්තූතියි🐳```'
              await cobrabotconn.sendMessage(cobrabotconn.user.jid,Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: privatesi})
         }
               }else if (config.WORKTYPE == 'public') { 
                   
          if (config.LANG == 'EN') { 
-            var publicen = '*CG BOT Working as Public!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as public.*\n*To change it, use* \n.setvar WORK_TYPE:private\n\n\n```Thanks For Using AQUABOT 🐳```'
+            var publicen = '*King Rawana Working as Public!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as public.*\n*To change it, use* \n.setvar WORK_TYPE:private\n\n\n```Thanks For Using AQUABOT 🐳```'
               await cobrabotconn.sendMessage(cobrabotconn.user.jid,Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: publicen})
 
          } else if (config.LANG == 'SI') {
              
-             var publicsi = '*CG BOT පබ්ලික් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot public ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:private\n*යන විධානය භාවිත කරන්න.*\n\n\n```AQUABOT භාවිත කරනවාට ස්තූතියි🐳```'
+             var publicsi = '*King Rawana පබ්ලික් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot public ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:private\n*යන විධානය භාවිත කරන්න.*\n\n\n```AQUABOT භාවිත කරනවාට ස්තූතියි🐳```'
               await cobrabotconn.sendMessage(cobrabotconn.user.jid,Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: publicsi})
         }
        }
@@ -416,14 +416,14 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWNER.number == "94784506970" && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWNER.number == "94760510568" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWNER.number.includes(',') ? OWNER.number.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWNER.number || OWNER.number.includes(',') ? OWNER.number.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWNER.number)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-                    if ((OWNER2 == '94784506970,0' && msg.key.fromMe === false && command.fromMe === true &&
+                    if ((OWNER2 == '94718080458,0' && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWNER2.includes(',') ? OWNER2.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWNER2 || OWNER2.includes(',') ? OWNER2.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWNER2)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
@@ -464,7 +464,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
 
                             if (config.LANG == 'SI') {
                                 await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ වාර්තාව (🐋AQUABOT 🐋)✧♦︎*' + 
-                                    '\n*AQUABOT දෝෂයක් සිදු වී ඇත!*'+
+                                    '\n*King Rawana Bot දෝෂයක් සිදු වී ඇත!*'+
                                     '\n_මෙම දෝශ ලඝු සටහනෙහි ඔබේ අංකය හෝ සගයෙකුගේ අංකය ඇතුළත් විය හැකිය. කරුණාකර එය සමග සැලකිලිමත් වන්න!_' +
                                     '\n_දෝෂය පිළීබඳ Admin දැනුවත් කරන්න._' +
                                     '\n_උදව් සඳහා ඔබට අපගේ Whatsapp කණ්ඩායමට ලිවිය හැකිය._' +
