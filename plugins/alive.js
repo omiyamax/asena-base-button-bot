@@ -40,14 +40,14 @@ const Lang = Language.getString('system_stats');
             
         var aliveimg = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🎭🇱🇰𝙰𝙻𝙿𝙷𝙰🇱🇰🎭]\n\n│```👋Hey, I\'m online now```\n\n│ ```Type``` ' + HANDLER + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```'  + Config. VERSION + '```\n\n└─────────────◉',quoted: message.data })
+        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[👑𝙺𝙸𝙽𝙶 𝚁𝙰𝚆𝙰𝙽𝙰]\n\n│```👋Hey, I\'m online now```\n\n│ ```Type``` ' + HANDLER + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```'  + Config. VERSION + '```\n\n└─────👑───────◉',quoted: message.data })
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 🎭🇱🇰𝙰𝙻𝙿𝙷𝙰🇱🇰🎭 ²⁰²²',quoted: message.data })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 👑𝙺𝙸𝙽𝙶 𝚁𝙰𝚆𝙰𝙽𝙰 ²⁰²²',quoted: message.data })
      }
     }));
 
