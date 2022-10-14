@@ -7,16 +7,16 @@ let wk = Config.WORKTYPE == 'public' ? false : true
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 var SDESC = ''
-if (Config.LANG == 'EN')  SDESC = 'It sends live cricket matches score links from cricbuzz.'
-if (Config.LANG == 'SI')  SDESC = 'එය cricbuzz සජීවී ලකුණු පුවරු ලින්ක් ගෙන එයි.'
+if (Config.LANG == 'EN')  SDESC = '🎬It sends live cricket matches score links from cricbuzz.'
+if (Config.LANG == 'SI')  SDESC = '📽️එය cricbuzz සජීවී ලකුණු පුවරු ලින්ක් ගෙන එයි.'
 
 var GDESC = ''
-if (Config.LANG == 'EN')  GDESC = 'it sends cricket matches live score'
-if (Config.LANG == 'SI')  GDESC = 'එය ක්‍රිකට් තරග වල සජීවී ලකුණු ගෙන එයි'
+if (Config.LANG == 'EN')  GDESC = '🎥it sends cricket matches live score'
+if (Config.LANG == 'SI')  GDESC = '📽️එය ක්‍රිකට් තරග වල සජීවී ලකුණු ගෙන එයි'
 
 var NEED_LINK = ''
-if (Config.LANG == 'EN')  NEED_LINK = '*🧜‍♀️🧜‍♂️Please provide a link from cricbuzz.com.*\n*The .getcric command also provides the same link.*'
-if (Config.LANG == 'SI')  NEED_LINK = '*🧜‍♀️🧜‍♂️කරුණාකර cricbuzz.com වෙතින් ලින්ක් එකක් ලබා දෙන්න.* \n*.getcric විධානය මගින්ද එම ලින්ක් ලබා ගත හැකිය.*'
+if (Config.LANG == 'EN')  NEED_LINK = '*👩‍💻Please provide a link from cricbuzz.com.*\n*The .getcric command also provides the same link.*'
+if (Config.LANG == 'SI')  NEED_LINK = '*👑කරුණාකර cricbuzz.com වෙතින් ලින්ක් එකක් ලබා දෙන්න.* \n*.getcric විධානය මගින්ද එම ලින්ක් ලබා ගත හැකිය.*'
 
 
 Aqua.addCommand({ pattern: 'getcric$ ?(.*)', fromMe: wk, desc:SDESC, deleteCommand: false }, async (message, match) => {
@@ -53,7 +53,7 @@ const $ = cheerio.load(srch.data)
         srh_data += `─────────────────\n\n`
         }
 
-await message.client.sendMessage(message.jid, '╔═══════════════╗\n║  *🎾AQUA Cricbuzz Search🎾* ║\n╚═══════════════╝\n\n' + srh_data,MessageType.text, {quoted: message.data});
+await message.client.sendMessage(message.jid, '╔═════════👑═════╗\n║  *🔎𝙺𝙸𝙽𝙶 𝚁𝙰𝚆𝙰𝙽𝙰 Cricbuzz Search🔎* ║\n╚═══════👑═══════╝\n\n' + srh_data,MessageType.text, {quoted: message.data});
   return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
   }
   )
