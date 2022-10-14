@@ -1,6 +1,6 @@
 {
-    "name": "🎭🇱🇰 𝙰𝙻𝙿𝙷𝙰 🇱🇰🎭 WhatsApp User Bot v5.0.1",
-    "description": "AQUABOT  - Makes it easy and fun to use Whatsapp.",
+    "name": "👑🇱🇰 KING RAWANA 🇱🇰👑 WhatsApp User Bot v5.0.1",
+    "description": "King Rawana  - Makes it easy and fun to use Whatsapp.",
     "logo": "https://telegra.ph/file/cd6032c65c27e0510ddad.jp",
     "keywords": ["whatsapp", "userbot","Achi Bro lk | PG", "ALPHA", "WhatsAsena", "bot", "api", "ai"],
     "repository": "https://github.com/iamMagma/ptsp",
@@ -8,7 +8,7 @@
     "success_url": "https://sanuw-api.herokuapp.com/",
     "stack": "container",
     "env": {
-        "ALPHA_SESSION": {
+        "RAWANA_SESSION": {
             "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්.",
             "required": true
         },
