@@ -55,7 +55,7 @@ if (Config.WORKTYPE == 'private') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'*╔═══❖•ೋ° °ೋ•❖═══╗*\n*║🐋Aquabot Command list 🐋║*\n*╚═══❖•ೋ° °ೋ•❖═══╝*\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'*╔👑══❖•ೋ° °ೋ•❖═══╗*\n*║👑King Rawana Command list 👑║*\n*╚═👑═❖•ೋ° °ೋ•❖═══╝*\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
             Aqua.commands.map(
@@ -107,7 +107,7 @@ if (Config.WORKTYPE == 'private') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'*╔═══❖•ೋ° °ೋ•❖═══╗*\n*║🐋Aquabot Command list 🐋║*\n*╚═══❖•ೋ° °ೋ•❖═══╝*\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'*╔═👑═❖•ೋ° °ೋ•❖═══╗*\n*║👑King Rawana Command list 👑║*\n*╚═👑═❖•ೋ° °ೋ•❖═══╝*\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         }
     }));
 }
@@ -213,7 +213,7 @@ else if (Config.WORKTYPE == 'public') {
             );
             if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
             await message.client.sendMessage(
-                message.jid,'*╔═══❖•ೋ° °ೋ•❖═══╗*\n*║🐋Aquabot Command list 🐋║*\n*╚═══❖•ೋ° °ೋ•❖═══╝*\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'*╔═👑═❖•ೋ° °ೋ•❖═══╗*\n*║👑King Rawana Command list 👑║*\n*╚═👑═❖•ೋ° °ೋ•❖═══╝*\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         }
     }));
 }
