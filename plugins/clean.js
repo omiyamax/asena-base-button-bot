@@ -21,5 +21,5 @@ Aqua.addCommand({ pattern: 'clear', fromMe: true, desc: CLEAR_DESC, dontAddComma
 
     await message.sendMessage('```cleaning chat... 🧼```');
     await message.client.modifyChat(message.jid, ChatModification.delete);
-    await message.sendMessage('```Chat cleared 🚮```');
+    await message.sendMessage('```Chat cleared 🗑️```');
 }));
